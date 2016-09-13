@@ -1,20 +1,19 @@
 cmake_minimum_required(VERSION 3.1)
 project(LongestPalindromeSubsequence)
 
-
-# ==============================================================================
+set (CMAKE_CXX_STANDARD 14)
 
 add_definitions(-O2)
 
+# MAIN EXECUTABLE
+# ==============================================================================
 
 add_executable(main main.cpp)
-set_property(TARGET main PROPERTY CXX_STANDARD 14)
 
 
 # GOOGLE TEST
 # ==============================================================================
 add_executable(t t.cpp)
-set_property(TARGET t PROPERTY CXX_STANDARD 14)
 
 find_package(Threads)
 
