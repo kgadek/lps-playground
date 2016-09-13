@@ -23,3 +23,10 @@ include_directories(${gmock_SOURCE_DIR}/include)
 target_link_libraries(t gmock gtest gtest_main)
 target_link_libraries(t ${CMAKE_THREAD_LIBS_INIT})
 
+
+# NONIUS BENCHMARK
+# ==============================================================================
+
+add_executable(b b.cpp)
+include_directories("vendor/nonius-v1.1.2/include")
+
